@@ -45,8 +45,8 @@ export function MessageDateStructure (MainStructures: MainStructure[], TimeStruc
 
         _structure[time] = {
             emoji: {
-                name: Object.keys(_topEmoji).sort((a, b) => _topEmoji[b] - _topWord[a]).slice(0, 1)[0] || null,
-                count: _topEmoji[Object.keys(_topEmoji).sort((a, b) => _topEmoji[b] - _topWord[a]).slice(0, 1)[0]] || 0
+                name: Object.keys(_topEmoji).sort((a, b) => _topEmoji[b] - _topEmoji[a]).slice(0, 1)[0] || null,
+                count: _topEmoji[Object.keys(_topEmoji).sort((a, b) => _topEmoji[b] - _topEmoji[a]).slice(0, 1)[0]] || 0
             },
             emojiTotal: _emojiCount,
             timestamp: moment(time, 'DD.MM.YY').valueOf(),

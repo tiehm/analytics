@@ -1,5 +1,6 @@
 import * as express from 'express';
-import * as exphbs from 'express-handlebars';
+import * as exphbs  from 'express-handlebars';
+import { pdf }      from './pdf';
 
 export function setup (data: Setup) {
 
@@ -13,8 +14,9 @@ export function setup (data: Setup) {
 
     });
 
-    app.listen(3000, () => {
-        console.log(`Now listening to PORT 3000`);
+    app.listen(3000, async () => {
+        await pdf();
+        process.exit(0);
     })
 
 }
