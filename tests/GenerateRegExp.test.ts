@@ -1,4 +1,4 @@
-import { GenerateRegExp } from '../src/util/GenerateRegExp';
+import { GenerateRegExp } from '../src/structures/util/GenerateRegExp';
 
 test('Generate the Regular Expressions', () => {
     const {NameOneRegex, NameTwoRegex} = GenerateRegExp('Charlie', 'Peter');

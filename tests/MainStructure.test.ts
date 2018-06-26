@@ -1,5 +1,5 @@
 import { join }        from 'path';
-import {MainStructure} from '../src/util/MainStructure';
+import {MainStructure} from '../src/structures/main/MainStructure';
 import {readFileSync}  from 'fs';
 
 interface MainStructure {

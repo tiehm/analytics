@@ -1,6 +1,6 @@
-import {readFileSync} from 'fs';
-import {TimeStructure}  from '../src/util/TimeStructure';
-import * as moment from 'moment';
+import {readFileSync}  from 'fs';
+import {TimeStructure} from '../src/structures/time/TimeStructure';
+import * as moment     from 'moment';
 
 describe('Time structure', () => {
 

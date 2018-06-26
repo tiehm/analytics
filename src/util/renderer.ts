@@ -16,6 +16,7 @@ export function setup (data: Setup) {
 
     app.listen(3000, async () => {
         await pdf();
+        console.log('PDF created.')
         process.exit(0);
     })
 

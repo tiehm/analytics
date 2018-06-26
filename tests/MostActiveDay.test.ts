@@ -1,9 +1,9 @@
 import {readFileSync}         from 'fs';
-import {MainStructure}        from '../src/util/MainStructure';
-import {GenerateRegExp}       from '../src/util/GenerateRegExp';
-import {MostActiveDay}        from '../src/util/MostActiveDay';
-import {TimeStructure}        from '../src/util/TimeStructure';
-import {MessageDateStructure} from '../src/util/MessageDateStructure';
+import {MainStructure}        from '../src/structures/main/MainStructure';
+import {GenerateRegExp}       from '../src/structures/util/GenerateRegExp';
+import {MostActiveDay}        from '../src/structures/time/MostActiveDay';
+import {TimeStructure}        from '../src/structures/time/TimeStructure';
+import {MessageDateStructure} from '../src/structures/time/MessageDateStructure';
 
 interface MostActiveDay {
     day: string;

@@ -9,6 +9,7 @@ interface MainStructure {
     content: string;
     emojiNames: object;
     emoji: number;
+    topWords: {[name: string]: number};
 }
 
 interface TimeStructure {
@@ -18,13 +19,16 @@ interface TimeStructure {
 }
 
 interface EmojiStructure {
-    topEmojis: {
-        [name: string]: number
-    };
-    emojisSentOne: number;
-    emojisSentTwo: number;
+    all: {[name: string]: number},
+    one: {[name: string]: number},
+    two: {[name: string]: number}
 }
 
+interface TopEmojis {
+    all: {name: string, count: number}[],
+    one: {name: string, count: number}[],
+    two: {name: string, count: number}[]
+}
 
 interface MessageDateStructure {
     [date: string]: {
@@ -87,5 +91,24 @@ interface Setup {
     charT: [number, number][],
     char1: [number, number][],
     char2: [number, number][],
-    topEmojis: {name: string, count: number}[]
+    topEmojis: {name: string, count: number}[],
+    topWords: TopWords
+}
+
+interface WordStructure {
+    all: {[name: string]: number},
+    one: {[name: string]: number},
+    two: {[name: string]: number}
+}
+
+interface TopWords {
+    all: {[name: string]: number},
+    one: {[name: string]: number},
+    two: {[name: string]: number}
+}
+
+interface MessagesWeekdays {
+    totalMessagesByAll: number[];
+    totalMessagesByAllOne: number[];
+    totalMessagesByAllTwo: number[];
 }
