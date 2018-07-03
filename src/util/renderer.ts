@@ -2,6 +2,10 @@ import * as express from 'express';
 import * as exphbs from 'express-handlebars';
 import { pdf } from './pdf';
 
+/**
+ * Sends to render and calls pdf function
+ * @param {Setup} data
+ */
 export function setup(data: Setup) {
     const app: express.Application = express();
     app.engine('handlebars', exphbs());
