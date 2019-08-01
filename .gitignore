@@ -1,0 +1,10 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/
+dist/
+node_modules/
+coverage/
+tests/**/*.txt
+tests/**/*.json
+logs/
+chats/
+.env
