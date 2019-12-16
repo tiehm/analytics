@@ -32,4 +32,4 @@ npm run test
 
 ## License
 
-This is a private project, you have no permission to use any of this code.
+This is a private project, I do not guarantee the security of this due to the lack of updates.
