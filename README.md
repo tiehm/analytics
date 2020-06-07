@@ -1,5 +1,7 @@
 # WhatsAppChat Analytics
 
+**This project is currently not continued and does not run anywhere. It is just a showcase of my skills (or rather my skills from 1 year ago) and thus security conflicts in dependencies are currently not fixed.**
+
 ![licence](https://img.shields.io/badge/licence-PRIVATE-orange.svg)
 
 Private API for a WhatsAppChat Analysis. Performing exact analytics based on a WhatsApp Chat.
